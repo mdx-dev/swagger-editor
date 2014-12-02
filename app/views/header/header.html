@@ -64,9 +64,6 @@
         <li role="presentation">
           <a href="#/edit" role="menuitem" tabindex="-1" id="edit-mode">Editor</a>
         </li>
-        <li role="presentation" class="disabled">
-          <a role="menuitem" tabindex="-1" stop-event id="design-mode">Designer</a>
-        </li>
         <li role="presentation">
           <a href="#/" role="menuitem" tabindex="-1" id="preview-mode">Preview</a>
         </li>
@@ -95,24 +92,6 @@
       <ul class="dropdown-menu" role="menu" aria-labelledby="ClientMenu">
         <li ng-repeat="client in clients" role="presentation">
           <a role="menuitem" tabindex="-1" ng-click="getClient(client)">{{client}}</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="help dropdown">
-      <button class="dropdown-icon btn btn-default dropdown-toggle" id="helpMenu" data-toggle="dropdown" type="button">Help
-      <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu" aria-labelledby="helpMenu">
-        <li role="presentation">
-          <a href="https://github.com/swagger-api/swagger-editor/issues/new?labels=From%20Editor" target="_blank">Report A Bug</a>
-        </li>
-        <li role="presentation">
-          <a role="menuitem" tabindex="-1" href="http://swagger.wordnik.com/"target="_blank">Swagger Website</a>
-        </li>
-        <li role="presentation" class="divider"></li>
-        <li role="presentation">
-          <a ng-click="toggleAboutEditor(true)" role="menuitem" tabindex="-1">Show Introduction Help</a>
         </li>
       </ul>
     </div>

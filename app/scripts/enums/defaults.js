@@ -1,6 +1,7 @@
 'use strict';
 
 PhonicsApp.config(function ($provide) {
+
   $provide.constant('defaults',
 
   // BEGIN-DEFAULTS-JSON
@@ -87,7 +88,7 @@ PhonicsApp.config(function ($provide) {
     /*
      * Disables editing, removes all menu bar
     */
-    disableEditing: false,
+    disableEditing: /\.vitals\.com$/.test(window.location.host),
 
     /*
      * When it's enabled:
@@ -97,12 +98,17 @@ PhonicsApp.config(function ($provide) {
      *      app/templates/branding-left.html
      *       to it's header
     */
-    headerBranding: false,
+    headerBranding: true,
 
     /*
      * Enables Try Operation functionality
     */
-    enableTryIt: true,
+    enableTryIt: false,
+
+    /*
+     * Disable new user intro
+    */
+    disableNewUserIntro: true,
 
     /*
      * When `headerBranding` is enabled, this will be appended to body tag
@@ -120,7 +126,7 @@ PhonicsApp.config(function ($provide) {
      * it possible to import contents that are not allowed to be loaded from a
      * different origin. If you're hosting your own editor, please replace this
     */
-    importProxyUrl: 'https://cors-it.herokuapp.com/?url='
+    importProxyUrl: ''
   }
   // END-DEFAULTS-JSON
 

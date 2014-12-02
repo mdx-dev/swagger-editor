@@ -8,15 +8,24 @@
   z-index: 5;
 }
 
-span.logo {
-  background-image: url("../images/swagger-sprite.png");
-  background-repeat: no-repeat;
-  background-position: 4px -33px;
-  height: 32px;
-  margin-top: 0;
-  display: inline-block;
-  width: 44px;
+div.logo {
+  display: block;
   float: left;
+
+  > a {
+    display: block;
+    margin: 9px 0 0 20px;
+    overflow: hidden;
+    text-indent: -9000px;
+    height: 13px;
+    width: 60px;
+    color: transparent;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    background-image: url("/img/cardio/logos/vitals-logo.png");
+  }
 }
 
 .menu-bar {
