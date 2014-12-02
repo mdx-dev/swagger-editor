@@ -66,6 +66,10 @@ PhonicsApp.controller('HeaderCtrl', function HeaderCtrl($scope, $modal,
     return !defaults.disableFileMenu;
   };
 
+  $scope.showMenuBar = function () {
+    return !defaults.disableEditing;
+  };
+
   $scope.showHeaderBranding = function () {
     return defaults.headerBranding;
   };

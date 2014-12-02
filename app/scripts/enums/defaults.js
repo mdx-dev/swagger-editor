@@ -85,6 +85,11 @@ PhonicsApp.config(function ($provide) {
     disableFileMenu: false,
 
     /*
+     * Disables editing, removes all menu bar
+    */
+    disableEditing: false,
+
+    /*
      * When it's enabled:
      *  * Editor will append `brandingCssClass` class to body tag
      *  * Editor will include branding templates at
